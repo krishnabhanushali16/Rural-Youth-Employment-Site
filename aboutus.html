@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>About Us – Rural Youth Employment</title>
+<link rel="stylesheet" href="stylesla.css">
+<style>
+body{
+    margin: 0;
+        font-family: "Poppins", Arial, sans-serif;
+        color: #3a3a3a;
+        background-color: #f2e0bd;
+        background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%236A4023' fill-opacity='0.35'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        background-size: 75px;
+    
+}
+
+/* HEADER */
+header{
+    text-align:center;
+    padding:20px;
+    background:#7A4E2D;
+    font-size:32px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight:700;
+    letter-spacing:7px;
+    box-shadow:0 0 20px #ffa600bd;
+}
+
+/* SECTION TITLE */
+.section-title{
+    font-size:28px;
+    margin:40px 0 10px;
+    text-align:center;
+    text-shadow:0 0 10px #000000bd;
+}
+
+/* PROJECT BOX */
+.box{
+    width:85%;
+    margin:20px auto;
+    background:#ffffff;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 0 20px #ffa6009a;
+    line-height:1.7;
+    transition:0.3s;
+}
+.box:hover{
+    transform:scale(1.01);
+    box-shadow:0 0 25px #ffa6009a;
+}
+
+/* EARTH ANIMATION */
+.center{
+    display:flex;
+    justify-content:center;
+    margin:40px 0;
+}
+.orbit{
+    width:250px;
+    height:250px;
+    border:2px dashed #ffa600;
+    border-radius:50%;
+    position:relative;
+    animation:spin 10s linear infinite;
+}
+@keyframes spin{
+    from{transform:rotate(0deg);}
+    to{transform:rotate(360deg);}
+}
+.sdg-center{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    background:#000000;
+    color:rgb(255, 255, 255);
+    padding:10px 18px;
+    border-radius:50%;
+    font-weight:700;
+    box-shadow:0 0 20px #ffa600;
+}
+.earth{
+    position:absolute;
+    top:-20px;
+    left:50%;
+    transform:translateX(-50%);
+    background:#ffa600;
+    padding:10px 20px;
+    border-radius:50%;
+    font-weight:600;
+    box-shadow:0 0 20px #ffa600;
+}
+
+/* TEAM CARD */
+.team-area{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:25px;
+}
+.card{
+    width:230px;
+    background:#b89b7c;
+    padding:15px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 0 20px #665645;
+    transition:0.3s;
+}
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 0 25px #ffa600;
+}
+.card img{
+    width:100%;
+    height:220px;
+    border-radius:10px;
+    object-fit:cover;
+}
+.name{font-size:20px;font-weight:700;margin-top:10px;}
+.role{font-size:18px;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;margin:5px 0;}
+.roll{font-size:17px;color:#ffffff;}
+
+</style>
+</head>
+<body>
+<nav>
+    <div class="logo">Rural Youth Jobs</div>
+    <ul>
+        <li><a href="ruralyouthdevelopment.html">Home</a></li>
+        <li><a href="opportunities.html">Opportunities</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="stories.html">Stories</a></li>
+        <li><a href="schemes.html">Schemes</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+    </ul>
+</nav>
+
+<header>ABOUT US</header>
+
+<h2 class="section-title">College Project Information</h2>
+<div class="box">
+<b>College:</b> Shah and Anchor Kutchi Engineering College – Computer Engineering Department<br>
+<b>Project Title:</b> Developing a Website for Rural Youth Employment<br>
+<b>Assigned By:</b> Ms. Karishma Tiware (Teacher, SAKEC – UG Program)<br>
+<b>Subject:</b> Skill Based Laboratory – I (Web Technology) – Semester I
+</div>
+
+<h2 class="section-title">Understanding SDG-8</h2>
+<div class="box">
+SDG-8 focuses on <b>“Decent Work and Economic Growth.”</b><br><br>
+Our team deeply understood that rural areas often suffer from unemployment, lack of awareness of skills, and poor access to job opportunities.  
+So, we built a platform that:<br><br>
+✔ connects rural users with jobs<br>
+✔ teaches skills<br>
+✔ gives access to schemes<br>
+✔ helps boost the rural economy<br><br>
+<b>This project revolves entirely around SDG-8!</b>
+</div>
+
+<div class="center">
+    <div class="orbit">
+        <div class="sdg-center">SDG-8</div>
+        <div class="earth">Our Project</div>
+    </div>
+</div>
+
+<h2 class="section-title">Other SDGs We Covered</h2>
+<div class="box">
+✔ SDG-4 – Quality Education (skill learning section)<br>  
+✔ SDG-5 – Gender Equality (equal job opportunities) <br> 
+✔ SDG-9 – Industry & Innovation (digital platform creation)
+</div>
+
+<h2 class="section-title">Our Team</h2>
+
+<div class="team-area">
+    <div class="card">
+    <img src="harshleen.jpg" alt="Upload">
+    <div class="name">Harshleen Kaur Banga</div>
+    <div class="roll">FYCM3-01</div>
+    <div class="role">Content Designer & Research Support</div>
+</div>
+
+<div class="card">
+    <img src="Krishnapic.jpg" alt="Upload">
+    <div class="name">Krishna M. Bhanushali</div>
+    <div class="roll">FYCM3-02</div>
+    <div class="role"> Project Developer & Coordinator</div>
+</div>
+
+<div class="card">
+    <img src="arman.jpg" alt="Upload">
+    <div class="name">Arman Bilakhiya</div>
+    <div class="roll">FYCM3-04</div>
+    <div class="role">Co-Developer & UI Contributor</div>
+</div>
+
+
+
+<div class="card">
+    <img src="parth.jpg" alt="Upload">
+    <div class="name">Parth Bidve</div>
+    <div class="roll">FYCM3-03</div>
+    <div class="role">Assistant Research & Minor Contributions</div>
+</div>
+
+</div>
+
+<h2 class="section-title">Our Experience!</h2>
+<div class="box">
+<bold><i><strong></strong>“Creating this website wasn’t just a project—it was a journey of learning, teamwork, and caffeine.
+And in the process, we built something that actually makes a difference.”</bold></i>
+</div>
+
+</body>
+</html>

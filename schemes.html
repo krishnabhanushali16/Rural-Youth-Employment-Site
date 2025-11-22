@@ -1,0 +1,322 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Government Schemes - Rural Youth Employment</title>
+
+<style>
+/* ------------------------------ */
+/* GLOBAL THEME + BACKGROUND */
+/* ------------------------------ */
+
+body {
+    /* ---- PREMIUM COLOR UPGRADE ---- */
+
+body {
+    background-color: #f6eedd;
+}
+
+/* Nav */
+nav {
+    background: rgba(255, 249, 240, 0.8);
+    border-bottom: 2px solid #c9a777;
+}
+
+nav .logo {
+    color: #6a4023;
+}
+
+nav ul li a {
+    color: #6a4023;
+}
+
+nav ul li a:hover {
+    background: #c9a777;
+    color: white;
+}
+
+/* Hero */
+.hero h1 {
+    text-shadow: 0 2px 4px rgba(0,0,0,0.25);
+}
+
+.tagline {
+    background: #fff5e4;
+    color: #6a4023;
+}
+
+/* Cards */
+.card {
+    border: 1.5px solid #d8c5aa;
+}
+
+.card h3 {
+    color: #6a4023;
+}
+
+/* Scheme Section */
+.scheme-section {
+    border-top: 2px solid #c9a777;
+}
+
+.scheme {
+    border: 1.5px solid #d8c5aa;
+}
+
+.scheme h4 {
+    color: #6a4023;
+}
+
+/* Footer */
+.footer {
+    background: #6a4023;
+}
+
+    margin: 0;
+    font-family: "Poppins", Arial, sans-serif;
+    background: #FFF7EB;
+    color: #3a3a3a;
+ /* Premium Indian doodle SVG pattern */
+background-color: #f2e0bd;
+background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%236A4023' fill-opacity='0.35'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+background-size: 75px;
+}
+
+/* ------------------------------ */
+/* NAVBAR */
+/* ------------------------------ */
+
+nav {
+    background: rgba(255, 250, 240, 0.8);
+    backdrop-filter: blur(6px);
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    border-bottom: 2px solid #C0A889;
+}
+
+nav .logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #7A4E2D;
+    letter-spacing: 0.7px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    color: #7A4E2D;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 6px 10px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background: #C0A889;
+    color: white;
+}
+
+/* ------------------------------ */
+/* HERO SECTION (FOR SCHEMES PAGE) */
+/* ------------------------------ */
+
+.hero {
+    height: 50vh;
+    background: linear-gradient(rgba(40,20,5,0.5), rgba(40,20,5,0.5)),
+    url("pngtree-beautiful-landscape-of-a-rice-field-and-sky-in-the-village-image_15937834.jpg") center/cover no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 38px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 16px;
+    max-width: 650px;
+    margin: 0 auto;
+    color: #fff
+}
+
+
+/* ------------------------------ */
+/* MAIN SCHEME LIST SECTION */
+/* ------------------------------ */
+
+.main-section {
+    padding: 50px 20px 40px 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.main-section h2 {
+    text-align: center;
+    color: #7A4E2D;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.main-section p.intro {
+    text-align: center;
+    max-width: 750px;
+    margin: 0 auto 30px auto;
+    font-size: 20px;
+    color: #000000
+}
+
+/* reuse scheme card style but for a list */
+.scheme-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.scheme-card {
+    background: #FFFFFF;
+    padding: 18px;
+    border-radius: 12px;
+    border: 1.5px solid #C8B39B;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: 0.3s;
+}
+
+.scheme-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 7px 16px rgba(0,0,0,0.12);
+}
+
+.scheme-card h3 {
+    margin: 0 0 6px 0;
+    color: #7A4E2D;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.scheme-card p {
+    font-size: 14px;
+    margin: 0 0 8px 0;
+    color: #3a3a3a;
+}
+
+.scheme-card a {
+    font-size: 14px;
+    color: #0077cc;
+    text-decoration: none;
+}
+
+.scheme-card a:hover {
+    text-decoration: underline;
+}
+
+/* ------------------------------ */
+/* FOOTER */
+/* ------------------------------ */
+
+.footer {
+    background: #7A4E2D;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    font-weight: 500;
+    font-size: 15px;
+    margin-top: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">Rural Youth Jobs</div>
+    <ul>
+        <li><a href="ruralyouthdevelopment.html">Home</a></li>
+        <li><a href="opportunities.html">Opportunities</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="stories.html">Stories</a></li>
+        <li><a href="schemes.html">Schemes</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+    </ul>
+</nav>
+
+<!-- HERO / INTRO FOR SCHEMES PAGE -->
+<section class="hero">
+    <div>
+        <h1>Government Schemes for Rural Youth</h1>
+        <p><strong><bold>Explore employment, skill development, entrepreneurship and financial support schemes designed to uplift rural communities.</bold></strong></p>
+    </div>
+</section>
+
+<!-- MAIN SCHEME CONTENT -->
+<section class="main-section">
+    <h2>Explore Key Schemes</h2>
+    <p class="intro">
+       <strong><bold> These schemes are run by the Government of India and various ministries. Click on “Official Website” to read eligibility, benefits, and application steps.</bold></strong>
+    </p>
+
+    <div class="scheme-list">
+
+        <div class="scheme-card">
+            <h3>MGNREGA – Mahatma Gandhi National Rural Employment Guarantee Act</h3>
+            <p>Provides at least 100 days of guaranteed wage employment per year to rural households. Helps reduce distress migration and ensures basic livelihood security.</p>
+            <a href="https://nrega.nic.in" target="_blank">Official Website</a>
+        </div>
+
+        <div class="scheme-card">
+            <h3>PMKVY – Pradhan Mantri Kaushal Vikas Yojana</h3>
+            <p>Skill India’s flagship scheme offering free short-term skill development courses and certifications to make youth more employable.</p>
+            <a href="https://www.pmkvyofficial.org" target="_blank">Official Website</a>
+        </div>
+
+        <div class="scheme-card">
+            <h3>DDU-GKY – Deen Dayal Upadhyaya Grameen Kaushalya Yojana</h3>
+            <p>Focuses on rural poor youth aged 15–35. Offers training, placement, and long-term career support with minimum wage jobs.</p>
+            <a href="https://ddugky.gov.in" target="_blank">Official Website</a>
+        </div>
+
+        <div class="scheme-card">
+            <h3>PMEGP – Prime Minister’s Employment Generation Programme</h3>
+            <p>Provides financial assistance for setting up micro-enterprises in rural and urban areas through banks with government subsidy.</p>
+            <a href="https://www.kviconline.gov.in/pmegpeportal/jsp/pmegponline.jsp" target="_blank">Official Website</a>
+        </div>
+
+        <div class="scheme-card">
+            <h3>NRLM / Aajeevika – National Rural Livelihoods Mission</h3>
+            <p>Promotes self-help groups (SHGs), small businesses, and livelihood collectives especially for rural women and vulnerable communities.</p>
+            <a href="https://aajeevika.gov.in" target="_blank">Official Website</a>
+        </div>
+
+        <div class="scheme-card">
+            <h3>Startup India & Stand-Up India (Rural Focus)</h3>
+            <p>Supports rural entrepreneurs with mentorship, market linkages, and financial support under various innovation and startup programs.</p>
+            <a href="https://www.startupindia.gov.in" target="_blank">Startup India Portal</a>
+        </div>
+
+    </div>
+</section>
+
+<div class="footer">
+    © 2025 Rural Youth Employment Initiative
+</div>
+
+</body>
+</html>

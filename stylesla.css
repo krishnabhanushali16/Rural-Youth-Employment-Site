@@ -1,0 +1,273 @@
+
+
+body {
+    margin: 0;
+    font-family: "Poppins", Arial, sans-serif;
+    background: #FFF7EB;
+    color: #000000;
+
+    
+    background-color: #f2e0bd;
+    background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%236A4023' fill-opacity='0.35'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-size: 75px;
+}
+
+/*  NAVBAR */
+
+nav {
+    background: rgba(255, 250, 240, 0.8);
+    backdrop-filter: blur(6px);
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    border-bottom: 2px solid #C0A889;
+    z-index: 10;
+}
+
+nav .logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #7A4E2D;
+    letter-spacing: 0.7px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    color: #7A4E2D;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 6px 10px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background: #C0A889;
+    color: white;
+}
+
+/* HOMEPAGE HERO (unchanged) */
+
+.hero {
+    height: 70vh;
+    background: linear-gradient(rgba(40,20,5,0.4), rgba(40,20,5,0.4)),
+    url("ruralyouth.jpg") center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 42px;
+    font-weight: 800;
+}
+
+.tagline {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #FFF7EB;
+    border-radius: 10px;
+    color: #7A4E2D;
+    font-weight: 700;
+    display: inline-block;
+}
+
+/*UNIVERSAL CARDS (homepage cards) */
+
+.sections {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 50px 20px;
+    gap: 25px;
+}
+
+.card {
+    background: #FFFFFF;
+    width: 260px;
+    padding: 22px;
+    border-radius: 14px;
+    border: 1.5px solid #C8B39B;
+    cursor: pointer;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 5px 12px rgba(0,0,0,0.08);
+}
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
+
+.emoji {
+    font-size: 34px;
+}
+
+/* SCHEME SECTION (home)*/
+
+.scheme-section {
+    padding: 60px 20px;
+    text-align: center;
+    background: linear-gradient(#00000060, #00000050),
+     url("pngtree-beautiful-landscape-of-a-rice-field-and-sky-in-the-village-image_15937834.jpg")
+     center/cover no-repeat;
+    border-top: 2px solid #eac58d;
+}
+
+.scheme-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 22px;
+    margin-top: 25px;
+}
+
+.scheme {
+    background: #FFFFFF;
+    padding: 18px;
+    width: 260px;
+    border-radius: 12px;
+    border: 1.5px solid #C8B39B;
+    transition: 0.3s;
+}
+.scheme:hover {
+    transform: translateY(-4px);
+}
+
+/* FOOTER */
+
+.footer {
+    background: #7A4E2D;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    font-weight: 500;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+/* OPPORTUNITIES PAGE STYLES */
+
+/* HERO  */
+
+/* OPPORTUNITIES PAGE EXTRA STYLES  */
+
+/* HERO */
+.opp-hero {
+  height: 100vh;
+    background: linear-gradient(rgba(40,20,5,0.4), rgba(40,20,5,0.4)),
+    url("opportunityhero.jpg") center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+    backdrop-filter: brightness(0.7);
+    
+}
+.opp-hero h1 { font-size: 42px; }
+.opp-hero p { font-size: 18px; }
+
+/* STATS */
+.stats-section{
+
+height:80vh;
+    background: linear-gradient(rgba(40,20,5,0.4), rgba(40,20,5,0.4)),
+    url("statsbg.jpg") center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+.stats-section {
+    text-align: center;
+    padding: 50px 20px;
+}
+}
+.stats-grid {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 25px;
+    flex-wrap: wrap;
+}
+.stat-card {
+    background: #ffffffcc;
+    padding: 20px 30px;
+    border-radius: 18px;
+    border: 1px solid #d8c5aa;
+    transition: 0.25s;
+    width: 220px;
+    cursor: pointer;
+}
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+.stat-card h3 {
+    margin: 0;
+    font-size: 34px;
+    color: #9b834f;
+}
+
+/* OPPORTUNITY GRID */
+.opportunity-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding: 40px;
+    border-radius: 20px;
+   
+}
+/* OPPORTUNITY CONTAINER BACKGROUND */
+.opportunity-container {
+    background: url('hirepeoplebg.jpg') center/cover no-repeat;
+    padding: 50px;
+    border-radius: 25px;
+    margin-top: 50px;
+}
+
+
+/* BOXES */
+.opp-box {
+    background: rgba(255,255,255,0.85);
+    padding: 25px;
+    border-radius: 20px;
+    border: 1px solid #d8c5aa;
+}
+
+/* FORMS */
+.form-box input,
+.form-input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 1px solid #bca88c;
+}
+
+/* JOB RESULTS */
+.result-card {
+    background: white;
+    padding: 12px;
+    border-radius: 12px;
+    border: 1px solid #d8c5aa;
+    margin-bottom: 10px;
+}
+.no-results {
+    color: #444;
+    font-style: italic;
+}

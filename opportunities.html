@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Opportunities - Rural Youth Jobs</title>
+    <link rel="stylesheet" href="stylesla.css" />
+</head>
+<body>
+
+<nav>
+    <div class="logo">Rural Youth Jobs</div>
+    <ul>
+        <li><a href="ruralyouthdevelopment.html">Home</a></li>
+        <li><a href="opportunities.html">Opportunities</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="stories.html">Stories</a></li>
+        <li><a href="schemes.html">Schemes</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+    </ul>
+</nav>
+
+<section class="opp-hero">
+    <div class="hero-content">
+        <h1>Find Rural Opportunities</h1>
+        <p>Hire locally, explore rural jobs, or discover government-backed work programs.</p>
+    </div>
+</section>
+
+<!-- STATS SECTION -->
+<section class="stats-section">
+    <h2>Rural Employment Stats</h2>
+    <div class="stats-grid">
+        <div class="stat-card"><h3>72%</h3><p>Youth seeking local jobs</p></div>
+        <div class="stat-card"><h3>48,000+</h3><p>Rural opportunities posted</p></div>
+        <div class="stat-card"><h3>65%</h3><p>Youth opting digital work</p></div>
+    </div>
+</section>
+
+<section class="opportunity-container" style="background: url('hirepeoplebg.jpg') center/cover no-repeat; padding: 30px; border-radius: 20px; margin-top:50px;">
+
+    <div class="opp-box">
+        <h2>Hire Locally 🧑‍🌾</h2>
+        <p>Post a local job so nearby youth can find opportunities.</p>
+
+        <form id="hireForm" class="form-box">
+            <input type="text" id="jobTitle" placeholder="Job Title" required />
+            <input type="text" id="salary" placeholder="Salary (Optional)" />
+            <input type="text" id="location" placeholder="Village / City" required />
+            <button type="submit">Submit Job</button>
+        </form>
+    </div>
+
+    <div class="opp-box">
+        <h2>Rural Reach 📍</h2>
+        <p>Find jobs that match your location.</p>
+
+        <input type="text" id="searchLocation" class="form-input" placeholder="Enter your location" />
+        <button onclick="searchJobs()" class="search-btn">Search</button>
+
+        <div id="results" class="results-box" style="background: rgba(255,255,255,0.75); padding: 15px; border-radius: 12px; border: 1px solid #d8c5aa;"></div>
+    </div>
+
+</section>
+
+<div class="footer">© 2025 Rural Youth Employment Initiative</div>
+
+<script>
+const hireForm = document.getElementById('hireForm');
+
+hireForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const job = {
+        title: document.getElementById('jobTitle').value,
+        salary: document.getElementById('salary').value,
+        location: document.getElementById('location').value.toLowerCase(),
+    };
+
+    let jobs = JSON.parse(localStorage.getItem('ruralJobs')) || [];
+    jobs.push(job);
+    localStorage.setItem('ruralJobs', JSON.stringify(jobs));
+
+    alert('Job submitted successfully!');
+    hireForm.reset();
+});
+
+function searchJobs() {
+    const searchValue = document.getElementById('searchLocation').value.toLowerCase();
+    const resultsDiv = document.getElementById('results');
+
+    let jobs = JSON.parse(localStorage.getItem('ruralJobs')) || [];
+
+    const filtered = jobs.filter(job => job.location.includes(searchValue));
+
+    if (filtered.length === 0) {
+        resultsDiv.innerHTML = '<p class="no-results">No jobs found for this location.</p>';
+        return;
+    }
+
+    resultsDiv.innerHTML = filtered.map(job => `
+        <div class="result-card">
+            <h4>${job.title}</h4>
+            <p><strong>Salary:</strong> ${job.salary || 'Not mentioned'}</p>
+            <p><strong>Location:</strong> ${job.location}</p>
+        </div>
+    `).join('');
+}
+</script>
+
+</body>
+</html>
